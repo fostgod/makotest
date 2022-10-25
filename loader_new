@@ -1,5 +1,5 @@
 function scripthub()
-game.Players.LocalPlayer:Kick("Whilelist")
+ntf("whitelist")
 end
 
 
