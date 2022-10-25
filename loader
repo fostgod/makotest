@@ -453,7 +453,7 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
                                             kickcash("Noob Ez4")
                                         end
                                     else
-                                        kickcash("Noob Ez3")
+                                        kickcash("Noob Ez3"..getserver.StatusMessage)
                                     end
                                 else
                                     kickcash("Noob Ez2")
