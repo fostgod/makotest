@@ -1,5 +1,5 @@
 function scripthub()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/GodXNation/GodXNation/main/midnight%20racing%20hubV2%20fixed", true))()
+game.Players.LocalPlayer:Kick("Whilelist")
 end
 
 
@@ -340,154 +340,61 @@ function crashzzz(seconds)
     repeat until os.time() > start + seconds
 end
 crashzzz(13)
-local getdata = base64decode(getserver.Body)
+local getdata = getserver.Body
 if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
-    local datachack = {
-    ["-1F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-1));
-    ["-2F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-2));
-    ["-3F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-3));
-    ["-4F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-4));
-    ["-5F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-5));
-    ["-6F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-6));
-    ["-7F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-7));
-    ["-8F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-8));
-    ["-9F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-9));
-    ["-10F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-10));
-    ["1F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+1));
-    ["2F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+2));
-    ["3F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+3));
-    ["4F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+4));
-    ["5F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+5));
-    ["6F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+6));
-    ["7F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+7));
-    ["8F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+8));
-    ["9F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+9));
-    ["10F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+10));
-    
-    ["1T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+1));
-    ["2T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+2));
-    ["3T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+3));
-    ["4T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+4));
-    ["5T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+5));
-    ["6T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+6));
-    ["7T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+7));
-    ["8T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+8));
-    ["9T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+9));
-    ["10T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+10));
-    ["-1T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-1));
-    ["-2T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-2));
-    ["-3T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-3));
-    ["-4T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-4));
-    ["-5T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-5));
-    ["-6T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-6));
-    ["-7T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-7));
-    ["-8T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-8));
-    ["-9T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-9));
-    ["-10T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-10));
-    }
-    local checksc = {
-    ["-1F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-1;
-    ["-2F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-2;
-    ["-3F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-3;
-    ["-4F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-4;
-    ["-5F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-5;
-    ["-6F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-6;
-    ["-7F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-7;
-    ["-8F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-8;
-    ["-9F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-9;
-    ["-10F"] =getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-10;
-    ["1F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+1;
-    ["2F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+2;
-    ["3F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+3;
-    ["4F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+4;
-    ["5F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+5;
-    ["6F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+6;
-    ["7F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+7;
-    ["8F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+8;
-    ["9F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+9;
-    ["10F"] =getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+10;
-    ["1T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+1;
-    ["2T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+2;
-    ["3T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+3;
-    ["4T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+4;
-    ["5T"] = getdata ~= Key..gethwid.Body...."True"..os.time()+5;
-    ["6T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+6;
-    ["7T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+7;
-    ["8T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+8;
-    ["9T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+9;
-    ["10T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+10;
-    ["-1T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-1;
-    ["-2T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-2;
-    ["-3T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-3;
-    ["-4T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-4;
-    ["-5T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-5;
-    ["-6T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-6;
-    ["-7T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-7;
-    ["-8T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-8;
-    ["-9T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-9;
-    ["-10T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-10;
-    }
     if getdata ~= "Invaid Key" then
         if getdata ~= "Invaid Discordid" then
             if not string.find(getdata,"You Are Got Blacklist Reason") then
                 if getdata ~= "Invaid Hwid" then
                     if tonumber(os.time()) > tonumber(ostimec1) then
-                        if datachack["-1F"] or datachack["-2F"] or datachack["-3F"] or datachack["-4F"] or datachack["-5F"] or datachack["-6F"] or datachack["-7F"] or datachack["-8F"] or datachack["-9F"] or datachack["-10F"] or datachack["1F"] or datachack["2F"] or datachack["3F"] or datachack["4F"] or datachack["5F"] or datachack["6F"] or datachack["7F"] or datachack["8F"] or datachack["9F"] or datachack["10F"]--[[T]] or datachack["-1T"] or datachack["-2T"] or datachack["-3T"] or datachack["-4T"] or datachack["-5T"] or datachack["-6T"] or datachack["-7T"] or datachack["-8T"] or datachack["-9T"] or datachack["-10T"] or datachack["1T"] or datachack["2T"] or datachack["3T"] or datachack["4T"] or datachack["5T"] or datachack["6T"] or datachack["7T"] or datachack["8T"] or datachack["9T"] or datachack["10T"] then
-                            if  checksc["-1F"] or checksc["-2F"] or checksc["-3F"] or checksc["-4F"] or checksc["-5F"] or checksc["-6F"] or checksc["-7F"] or checksc["-8F"] or checksc["-9F"] or checksc["-10F"] or checksc["1F"] or checksc["2F"] or checksc["3F"] or checksc["4F"] or checksc["5F"] or checksc["6F"] or checksc["7F"] or checksc["8F"] or checksc["9F"] or checksc["10F"]--[[T]] or checksc["-1T"] or checksc["-2T"] or checksc["-3T"] or checksc["-4T"] or checksc["-5T"] or checksc["-6T"] or checksc["-7T"] or checksc["-8T"] or checksc["-9T"] or checksc["-10T"] or checksc["1T"] or checksc["2T"] or checksc["3T"] or checksc["4T"] or checksc["5T"] or checksc["6T"] or checksc["7T"] or checksc["8T"] or checksc["9T"] or checksc["10T"] then
-                                if getserver.Body ~= getserver2.Body then
-                                        if getserver2.Success == true then
-                                            if getserver.Success == true then
-                                                    if getserver.StatusMessage == "OK" then
-                                                            if getserver2.StatusMessage == "OK" then
-                                                                if getserver.Success == getserver2.Success then
-                                                                    if getserver.StatusMessage == getserver2.StatusMessage then
-                                                                        if getserver.StatusCode == getserver2.StatusCode then
-                                                                            scripthub()     
-                                                                        else
-                                                                            kickcash("\nNoobWa")
-                                                                        end
-                                                                    else
-                                                                        kickcash("Noob Ez 6")
-                                                                    end
-                                                                else
-                                                                    kickcash("Noob Ez 5")
-                                                                end
-                                                            else
-                                                                kickcash("Noob Ez4")
-                                                            end
-                                                        else
-                                                            kickcash("Noob Ez3")
+                        if getserver.Body ~= getserver2.Body then
+                            if getserver2.Success == true then
+                                if getserver.Success == true then
+                                    if getserver.StatusMessage == "OK" then
+                                        if getserver2.StatusMessage == "OK" then
+                                            if getserver.Success == getserver2.Success then
+                                                if getserver.StatusMessage == getserver2.StatusMessage then
+                                                    if getserver.StatusCode == getserver2.StatusCode then
+                                                        scripthub()     
+                                                    else
+                                                        kickcash("\nNoobWa")
                                                     end
                                                 else
-                                                    kickcash("Noob Ez2")
+                                                    kickcash("Noob Ez 6")
+                                                end
+                                            else
+                                                kickcash("Noob Ez 5")
                                             end
                                         else
-                                            kickcash("Noob Ez")
+                                            kickcash("Noob Ez4")
                                         end
                                     else
-                                        kickcash("\nNoobWa")
+                                        kickcash("Noob Ez3")
                                     end
                                 else
-                                    kickcash("\nKAKWA")
+                                    kickcash("Noob Ez2")
                                 end
                             else
-                                ntf("os time Not found")
+                                kickcash("Noob Ez")
                             end
-                        else 
-                            kickcash("\n".."Hooking Time")
+                        else
+                            kickcash("\nNoobWa")
                         end
                     else
-                    game.Players.LocalPlayer:Kick("\n"..getdata)
+                        kickcash("\nKAKWA")
                     end
                 else
                     game.Players.LocalPlayer:Kick("\n"..getdata)
                 end
             else
-                game.Players.LocalPlayer:Kick("\n"..getdata)
+                    game.Players.LocalPlayer:Kick("\n"..getdata)
             end
         else
-            game.Players.LocalPlayer:Kick("\n"..getdata)
+                game.Players.LocalPlayer:Kick("\n"..getdata)
         end
     else
+            game.Players.LocalPlayer:Kick("\n"..getdata)
+    end
+else
     ntf("Wait...")
 end
