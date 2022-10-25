@@ -340,8 +340,93 @@ function crashzzz(seconds)
     repeat until os.time() > start + seconds
 end
 crashzzz(13)
-local getdata = getserver.Body
+local getdata = base64decode(getserver.Body)
 if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
+    local datachack = {
+    ["-1F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-1));
+    ["-2F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-2));
+    ["-3F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-3));
+    ["-4F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-4));
+    ["-5F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-5));
+    ["-6F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-6));
+    ["-7F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-7));
+    ["-8F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-8));
+    ["-9F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-9));
+    ["-10F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()-10));
+    ["1F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+1));
+    ["2F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+2));
+    ["3F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+3));
+    ["4F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+4));
+    ["5F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+5));
+    ["6F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+6));
+    ["7F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+7));
+    ["8F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+8));
+    ["9F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+9));
+    ["10F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+10));
+    
+    ["1T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+1));
+    ["2T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+2));
+    ["3T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+3));
+    ["4T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+4));
+    ["5T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+5));
+    ["6T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+6));
+    ["7T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+7));
+    ["8T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+8));
+    ["9T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+9));
+    ["10T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+10));
+    ["-1T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-1));
+    ["-2T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-2));
+    ["-3T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-3));
+    ["-4T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-4));
+    ["-5T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-5));
+    ["-6T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-6));
+    ["-7T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-7));
+    ["-8T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-8));
+    ["-9T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-9));
+    ["-10T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()-10));
+    }
+    local checksc = {
+    ["-1F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-1;
+    ["-2F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-2;
+    ["-3F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-3;
+    ["-4F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-4;
+    ["-5F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-5;
+    ["-6F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-6;
+    ["-7F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-7;
+    ["-8F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-8;
+    ["-9F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-9;
+    ["-10F"] =getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-10;
+    ["1F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+1;
+    ["2F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+2;
+    ["3F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+3;
+    ["4F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+4;
+    ["5F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+5;
+    ["6F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+6;
+    ["7F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+7;
+    ["8F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+8;
+    ["9F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+9;
+    ["10F"] =getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+10;
+    ["1T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+1;
+    ["2T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+2;
+    ["3T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+3;
+    ["4T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+4;
+    ["5T"] = getdata ~= Key..gethwid.Body...."True"..os.time()+5;
+    ["6T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+6;
+    ["7T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+7;
+    ["8T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+8;
+    ["9T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+9;
+    ["10T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+10;
+    ["-1T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-1;
+    ["-2T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-2;
+    ["-3T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-3;
+    ["-4T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-4;
+    ["-5T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-5;
+    ["-6T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-6;
+    ["-7T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-7;
+    ["-8T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-8;
+    ["-9T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-9;
+    ["-10T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-10;
+    }
     if getdata ~= "Invaid Key" then
         if getdata ~= "Invaid Discordid" then
             if not string.find(getdata,"You Are Got Blacklist Reason") then
