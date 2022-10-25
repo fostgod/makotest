@@ -410,7 +410,7 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
     ["2T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+2;
     ["3T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+3;
     ["4T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+4;
-    ["5T"] = getdata ~= Key..gethwid.Body...."True"..os.time()+5;
+    ["5T"] = getdata ~= Key..gethwid.Body.."True"..os.time()+5;
     ["6T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+6;
     ["7T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+7;
     ["8T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+8;
