@@ -363,7 +363,6 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
     ["8F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+8));
     ["9F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+9));
     ["10F"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."False"..os.time()+10));
-    
     ["1T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+1));
     ["2T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+2));
     ["3T"] = string.find(tostring(getdata),tostring(Key..gethwid.Body..discordid.."True"..os.time()+3));
@@ -395,7 +394,7 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
     ["-7F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-7;
     ["-8F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-8;
     ["-9F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-9;
-    ["-10F"] =getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-10;
+    ["-10F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()-10;
     ["1F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+1;
     ["2F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+2;
     ["3F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+3;
@@ -405,12 +404,12 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
     ["7F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+7;
     ["8F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+8;
     ["9F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+9;
-    ["10F"] =getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+10;
+    ["10F"] = getdata ~= Key..gethwid.Body..discordid.."False"..os.time()+10;
     ["1T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+1;
     ["2T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+2;
     ["3T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+3;
     ["4T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+4;
-    ["5T"] = getdata ~= Key..gethwid.Body...."True"..os.time()+5;
+    ["5T"] = getdata ~= Key..gethwid.Body.."True"..os.time()+5;
     ["6T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+6;
     ["7T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+7;
     ["8T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()+8;
@@ -427,60 +426,59 @@ if getserver.StatusCode == 200 and gethwid.StatusCode == 200 then
     ["-9T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-9;
     ["-10T"] = getdata ~= Key..gethwid.Body..discordid.."True"..os.time()-10;
     }
-    
-        if getdata ~= "Invaid Key" then
-            if getdata ~= "Invaid Discordid" then
-                if not string.find(getdata,"You Are Got Blacklist Reason") then
-                    if getdata ~= "Invaid Hwid" then
-                        if tonumber(os.time()) > tonumber(ostimec1) then
-                            if getserver.Body ~= getserver2.Body then
-                                if getserver2.Success == true then
-                                    if getserver.Success == true then
-                                        if getserver.StatusMessage == "OK" then
-                                            if getserver2.StatusMessage == "OK" then
-                                                if getserver.Success == getserver2.Success then
-                                                    if getserver.StatusMessage == getserver2.StatusMessage then
-                                                        if getserver.StatusCode == getserver2.StatusCode then
-                                                            scripthub()     
-                                                        else
-                                                            kickcash("\nNoobWa")
-                                                        end
+    if getdata ~= "Invaid Key" then
+        if getdata ~= "Invaid Discordid" then
+            if not string.find(getdata,"You Are Got Blacklist Reason") then
+                if getdata ~= "Invaid Hwid" then
+                    if tonumber(os.time()) > tonumber(ostimec1) then
+                        if getserver.Body ~= getserver2.Body then
+                            if getserver2.Success == true then
+                                if getserver.Success == true then
+                                    if getserver.StatusMessage == "OK" then
+                                        if getserver2.StatusMessage == "OK" then
+                                            if getserver.Success == getserver2.Success then
+                                                if getserver.StatusMessage == getserver2.StatusMessage then
+                                                    if getserver.StatusCode == getserver2.StatusCode then
+                                                        scripthub()     
                                                     else
-                                                        kickcash("Noob Ez 6")
+                                                        kickcash("\nNoobWa")
                                                     end
                                                 else
-                                                    kickcash("Noob Ez 5")
+                                                    kickcash("Noob Ez 6")
                                                 end
                                             else
-                                                kickcash("Noob Ez4")
+                                                kickcash("Noob Ez 5")
                                             end
                                         else
-                                            kickcash("Noob Ez3")
+                                            kickcash("Noob Ez4")
                                         end
                                     else
-                                        kickcash("Noob Ez2")
+                                        kickcash("Noob Ez3")
                                     end
                                 else
-                                    kickcash("Noob Ez")
+                                    kickcash("Noob Ez2")
                                 end
                             else
-                                kickcash("\nNoobWa")
+                                kickcash("Noob Ez")
                             end
                         else
-                            kickcash("\nKAKWA")
+                            kickcash("\nNoobWa")
                         end
                     else
-                        game.Players.LocalPlayer:Kick("\n"..getdata)
+                        kickcash("\nKAKWA")
                     end
                 else
                     game.Players.LocalPlayer:Kick("\n"..getdata)
                 end
             else
-                game.Players.LocalPlayer:Kick("\n"..getdata)
+                    game.Players.LocalPlayer:Kick("\n"..getdata)
             end
         else
-            game.Players.LocalPlayer:Kick("\n"..getdata)
+                game.Players.LocalPlayer:Kick("\n"..getdata)
         end
+    else
+            game.Players.LocalPlayer:Kick("\n"..getdata)
+    end
 else
     ntf("Wait...")
 end
